@@ -9,85 +9,59 @@
 }
 
 body {
-    background-color: #5F6F52;
+    background-color: #636d5a;
     font-family: Exo;
     font-size: 20px;
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     height: 100vh;
-    
 }
 
- .main{
-    width: 60%;
-
-}
-
-.header{
-    width: 100%;
-    background-color: #A9B388;
-    font-family: Exo;
-    font-size: 40px;
-    color: bisque;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    min-height: fit-content;
-    top: 0;
-    margin-bottom: 5%;
-}
-
-.title{
-    font-family: Exo;
-    font-size: 40px;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: fit-content;
-    left: 0;
-
-    
-}
-
-h1, h2 {
-    margin: 0;
-    color: black; 
-}
-
-
-
-li{
-    list-style-type: none;
-    display: inline-block;
-    margin-right: 20px;
-}
-
-li > a{
+.navigation  {
     color: white;
-    text-decoration: none;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: #636d5a;
+    width: 90%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background-image: url(why-does-everyone-love-hummus-so-much-662775.jpg);
+    background-size: cover;
 }
 
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    list-style-type: none;
+}
 
-.footer{
-    font-family: Exo;
-    font-size: 20px;
-    color: bisque;
-    margin: 0;
-    padding: 0;
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-1, .main-3, .main-5 {
+    padding: 5%;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    min-height: fit-content;
-    position: sticky;
-    bottom: 0;
-    margin-top: 5%;
+    align-items: center;
+    width: 90%;
+}
+
+.main-1_img{
+    height: 400px;
+    background-image: url(istockphoto-529727529-2048x2048.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-1_img, .main-3_img, .main-5_img {
+    width: 30%;
 }

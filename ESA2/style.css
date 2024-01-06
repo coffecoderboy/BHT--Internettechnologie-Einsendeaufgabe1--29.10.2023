@@ -1,48 +1,148 @@
-/* FILEPATH: /c:/Users/ashnf/Documents/GitHub/BHT--Internettechnologie-Einsendeaufgabe1--29.10.2023/ESA2/style.css */
+
+html{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ab2f2f;
+    background-image: url('foo-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+}
 
 body {
-    margin: 0;
-    padding-top: 1%;
-    padding-left: 3%;
-    padding-right: 3%;
-    font-family: Arial, sans-serif;
-    min-width: 100vh;
-    background-color: black;
-}
-
-
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-header img{
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-}
-
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
-    gap: 20px;
+    font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
+    background-color: #121212e3;
+    color: #f0f0f0;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    width: 60vw;
+    
+    
 }
 
-li{
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    transition: 0.5s;
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #1c1c1c;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    
+   
+}
+ 
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1c1c1c;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    color: #ffffff;
 }
 
-a{
+
+li a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
+}
+
+ul li a {
+    color: #ffffff; /* Change the color as needed */
+    text-decoration: none; /* Removes underline */
+    padding: 10px 20px; /* Adds some padding */
+    transition: background-color 0.3s ease; /* Adds a transition effect */
+}
+
+ul li a:hover {
+    background-color: #333333; /* Change the color as needed */
+    color: #f0f0f0; /* Change the color as needed */
+}
+
+#bild-container {
+    align-self: center;
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+    height: 400px;
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    
+}
+
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+#blog {
+    background-color: #1e1e1e;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+#kommentar-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4a4a4a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#kommentar-link:hover {
+    background-color: #626262;
+}
+
+#kommentar-textarea {
+    width: calc(100% - 40px);
+    height: 100px;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #2a2a2a;
+    color: #fff;
+    display: none;
+}
+
+#zeichen-zaehler {
+    margin-top: 10px;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1c1c;
     color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
 }

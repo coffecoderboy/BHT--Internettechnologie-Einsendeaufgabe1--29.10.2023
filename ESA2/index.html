@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Restaurant Homepage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
 </head>
 <body>
     <header>
-        <div class="logo"></div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
+        <h1>Unser Restaurant</h1>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Über Uns</a></li>
+                    <li class="nav-item"><a href="reservations.html" class="nav-link">Reservierungen</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Kontakt</a></li>
+                </ul>
+            </div>
         </nav>
-        <div class="media">
-            <a href="#"><img src="img/facebook.png" alt="facebook"></a>
-            <a href="#"><img src="img/instagram.png" alt="instagram"></a>
-            <a href="#"><img src="img/twitter.png" alt="twitter"></a>
-        </div>
-    </header>   
-    <main>
-     <div class="main_1"></div>
-     <div class="main_2"></div>
-     <div class="main_3"></div>
-    </main>
+    </header>
+    
+    <div id="bild-container">
+    </div>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <a href="#" id="kommentar-link">Einen Kommentar schreiben</a>
+        <textarea id="kommentar-textarea" style="display: none;" maxlength="500"></textarea>
+        <div id="zeichen-zaehler">500 Zeichen verbleibend</div>
+    </section>
+
     <footer>
-        <div class="impressum"></div>
+        <p>&copy; 2024 Unser Restaurant</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

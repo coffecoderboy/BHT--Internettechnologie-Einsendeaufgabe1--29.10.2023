@@ -1,7 +1,7 @@
 {
-    "speisen": [
-      { "name": "Margherita Pizza", "preis": "8.50€" },
-      { "name": "Pasta Carbonara", "preis": "9.00€" }
-    ]
+    "title": "Speisekarte",
+      "data1": "Margherita Pizza 8.50€",
+      "data2": "Pasta Carbonara 9.00€" 
+    
   }
   

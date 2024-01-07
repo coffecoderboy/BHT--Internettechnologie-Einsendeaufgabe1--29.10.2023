@@ -1,7 +1,6 @@
 {
-    "team": [
-      { "name": "Chef Mario", "rolle": "Küchenchef" },
-      { "name": "Laura", "rolle": "Servicekraft" }
-    ]
+    "title": "Team",
+      "data1": "Chef Mario Küchenchef",
+      "data2": "Laura Servicekraft"  
   }
   

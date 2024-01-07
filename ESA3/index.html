@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Restaurant Homepage</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
+    
+    
 </head>
 <body>
     <header>
@@ -26,18 +27,16 @@
     </div>
     <div id="drop-down">
        <select id="auswahl">
-           <option value="">Bitte auswählen</option>
-           <option value="speisen.json">Speisekarte</option>
-           <option value="team.json">Unser Team</option>
-           <option value="events.json">Events</option>
+           <option value="" disabled selected>Bitte auswählen</option>
+           <option value="../speisen.json">Speisekarte</option>
+           <option value="../team.json">Unser Team</option>
+           <option value="../events.json">Events</option>
         </select>
       
         <section id="restaurant-panel">
             <h2 class="title">Nichts ausgewählt.</h2>
-            <a class="ref" target="_blank" href="#">
-                <span class="label"></span>
-            </a>
-            <p class="description"></p>
+            <p class="data1"></p>
+            <p class="data2"></p>
         </section>
     </div>
       
@@ -53,6 +52,6 @@
         <p>&copy; 2024 Unser Restaurant</p>
     </footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

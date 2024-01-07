@@ -20,48 +20,24 @@ textBereich.addEventListener("input", function() {
     zeichenZaehler.textContent = `${verbleibendeZeichen} Zeichen verbleibend`;
 });
 
+
+
+
 //Ajax-Anfrage und dynamisches Laden des Inhalts
-3 // select-Element zur Spielauswahl im DOM finden
- 4 var auswahl = document.querySelector("#auswahl");
- 5 
- 6 // Auf Änderungen des select-Elements reagieren
- 7 auswahl.addEventListener("change", function(event) {
- 8   // Referenz auf select-Elements
- 9   var select = this;
-10   
-11   // Ausgewählten Wert auslesen
-12   var restaurantFileName = select.value;
-13 
-14   // Informationen zum Spiel per AJAX laden.
-15   var xhttp = new XMLHttpRequest();
-16   xhttp.onreadystatechange = function() {
-17     if (this.readyState == 4 && this.status == 200) {
-18        // Inhalt der Daten von JSON in JavaScript-Objekt wandeln
-19        var restaurantData = JSON.parse(this.responseText);
-20        // Anzeige für das Spiel mit geladeden Daten aktualisieren
-21        updateRestaurantPanel(restaurantData);
-22     }
-23   };
-24   
-25   xhttp.open("GET", "./" + restaurantFileName, true);
-26   xhttp.send();
-27 });
-28 
-29 var updateGamePanel = function(restaurantData) {
-30   // Anzeigebereich für Spielinformationen im DOM finden
-31   var restaurantPanel = document.querySelector("#game-panel");
-32 
-33   // Titel setzen
-34   var title = restaurantPanel.querySelector(".title");
-35   title.innerHTML = restaurantData.title;
-36 
-37   // Quellenangabe setzen
-38   var ref = restaurantPanel.querySelector(".ref");
-39   var label = ref.querySelector(".label");
-40   ref.href = restaurantData.ref;
-41   label.innerHTML = restaurantData.ref;
-42 
-43   // Beschreibung setzten
-44   var description = restaurantPanel.querySelector(".description");
-45   description.innerHTML = restaurantData.description;
-46 }
+document.getElementById('auswahl').addEventListener('change', function() {
+    var selectedValue = this.value;
+    if (selectedValue) {
+        fetch(selectedValue)
+            .then(response => response.json())
+            .then(data => {
+                document.querySelector('#restaurant-panel .title').textContent = data.title;
+                document.querySelector('#restaurant-panel .data1').textContent = data.data1;
+                document.querySelector('#restaurant-panel .data2').textContent = data.data2;
+            })
+            .catch(error => console.error('Error:', error));
+    } else {
+        document.querySelector('#restaurant-panel .title').textContent = 'Nichts ausgewählt.';
+        document.querySelector('#restaurant-panel .data1').textContent = '';
+        document.querySelector('#restaurant-panel .data2').textContent = '';
+    }
+});

@@ -1,7 +1,7 @@
 {
-    "events": [
-      { "name": "Italienischer Abend", "datum": "2023-05-15" },
-      { "name": "Weinverkostung", "datum": "2023-06-20" }
-    ]
+    "title": "Events",
+     "data1": "Italienischer Abend 2023-05-15",
+     "data2": "Weinverkostung 2023-06-20" 
+    
   }
   

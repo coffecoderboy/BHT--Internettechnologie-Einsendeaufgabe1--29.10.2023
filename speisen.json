@@ -1,0 +1,7 @@
+{
+    "speisen": [
+      { "name": "Margherita Pizza", "preis": "8.50€" },
+      { "name": "Pasta Carbonara", "preis": "9.00€" }
+    ]
+  }
+  
